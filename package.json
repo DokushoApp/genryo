@@ -1,0 +1,44 @@
+{
+  "name": "genryo",
+  "version": "0.1.0",
+  "description": "Manga source library for manga reader applications",
+  "main": "dist/dokusho-extensions.min.js",
+  "module": "dist/dokusho-extensions.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build",
+    "lint": "eslint src",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "manga",
+    "reader",
+    "source",
+    "api",
+    "mangadex"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/genryo.git"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^9.24.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.39.0"
+  }
+}
